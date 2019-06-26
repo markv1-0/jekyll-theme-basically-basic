@@ -1,13 +1,13 @@
-{% if cv.certification %}
+{% if cv.certifications %}
   <div id="certification" class="entry">
     <header class="entry-header">
       <h3 class="entry-title">Certifications</h3>
     </header>
 
     <div class="entry-content">
-      {% for c in cv.certification %}
-        {% if c.title %}
-          <h4 class="title">{{ c.title }}</h4>
+      {% for c in cv.certifications %}
+        {% if c.name %}
+          <h4 class="name">{{ c.name }}</h4>
         {% endif %}
         {% if c.body %}
           <div class="certification body">

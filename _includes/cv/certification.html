@@ -6,8 +6,8 @@
 
     <div class="entry-content">
       {% for c in cv.certifications %}
-        {% if c.name %}
-          <h4 class="name">{{ c.name }}</h4>
+        {% if c.cert %}
+          <h4 class="cert">test{{ c.cert }}</h4>
         {% endif %}
         {% if c.body %}
           <div class="certification body">

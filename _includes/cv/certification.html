@@ -10,7 +10,9 @@
           <h4 class="title">{{ c.name }}</h4>
         {% endif %}
         {% if c.body %}
-          <h4 class="certification body">{{ c.body }}</h4>
+          <div class="certification body">
+            <em>{{ c.body }}</em>
+          </div>
         {% endif %}
         </div>
       {% endfor %}

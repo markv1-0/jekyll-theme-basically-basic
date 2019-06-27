@@ -7,12 +7,7 @@
     <div class="entry-content">
       {% for c in cv.certifications %}
         {% if c.cert %}
-          <h4 class="tilte">{{ c.cert }}</h4>
-        {% endif %}
-        {% if c.body %}
-          <div class="certification body">
-            <em>{{ c.body }}</em>
-          </div>
+          <h4 class="title">{{ c.cert }}</h4>
         {% endif %}
       {% endfor %}
     </div>
